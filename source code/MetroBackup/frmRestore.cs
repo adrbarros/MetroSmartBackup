@@ -32,7 +32,7 @@ namespace MetroSmartBackup
                 diretorio.Create();
 
             string path = Application.StartupPath + "//images//logo.png";
-            
+
             if (new FileInfo(path).Exists)
                 picLogo.ImageLocation = path;
 
@@ -51,7 +51,7 @@ namespace MetroSmartBackup
                 progressRestore.Value = _porcentagem;
                 lblPorcentagem.Text = _porcentagem + "%";
                 lblBytesProcessados.Text = mCurrentBytes + " bytes processados de um total de " + mTotalBytes + " bytes";
-            }            
+            }
         }
 
         private void bw_DoWork(object sender, DoWorkEventArgs e)
@@ -66,11 +66,6 @@ namespace MetroSmartBackup
                         mb = new MySqlBackup(cmd);
 
                         cmd.Connection = conn;
-
-                        conn.Open();
-                        cmd.CommandText = "SET GLOBAL max_allowed_packet=32*1024*1024;";
-                        cmd.ExecuteNonQuery();
-                        conn.Close();
 
                         conn.Open();
 
@@ -141,6 +136,21 @@ namespace MetroSmartBackup
             if (dtBancos.Rows.Count > 0)
                 btnRestore.Enabled = true;
 
+            string strCnx = $"server={txtIp.Text};port={txtPorta.Text};uid={txtUsuario.Text};pwd={txtSenha.Text}";
+
+            using (MySqlConnection conn = new MySqlConnection(strCnx))
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+
+                    conn.Open();
+                    cmd.CommandText = "SET GLOBAL max_allowed_packet=1024*1024*1024;";
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+            }
+
             cmbDatabases.DataSource = dtBancos;
             cmbDatabases.DisplayMember = "schema_name";
         }
@@ -190,11 +200,11 @@ namespace MetroSmartBackup
 
             btnRestore.Enabled = false;
 
-            constring = "server=" + txtIp.Text + ";user=" + txtUsuario.Text + ";pwd=" + txtSenha.Text + ";database=" + cmbDatabases.Text + ";charset=utf8;convertzerodatetime=true; default command timeout=0;";
+            constring = $"server={txtIp.Text};user={txtUsuario.Text};pwd={txtSenha.Text};database={cmbDatabases.Text};charset=utf8;convertzerodatetime=true; default command timeout=0;";
             progressRestore.Visible = true;
             lblPorcentagem.Text = "0%";
-            
-            if(!bw.IsBusy)
+
+            if (!bw.IsBusy)
                 bw.RunWorkerAsync();
         }
 

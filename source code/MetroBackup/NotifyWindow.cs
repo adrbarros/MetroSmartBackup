@@ -9,18 +9,16 @@
 
 using System;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Reflection;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MetroFramework.Forms;
 
 namespace TestNotifyWindow
 {
-	/// <summary>
-	/// Display An MSN-Messenger-Style NotifyWindow.
-	/// </summary>
-	public class NotifyWindow : MetroForm
+    /// <summary>
+    /// Display An MSN-Messenger-Style NotifyWindow.
+    /// </summary>
+    public class NotifyWindow : MetroForm
 	{
 		#region Public Variables
 		/// <summary>
