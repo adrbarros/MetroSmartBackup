@@ -118,11 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Edit_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Edit-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DataBackupFilled25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data Backup Filled-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SaveasFilled50iloveimgresized" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save as Filled-50-iloveimg-resized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="railwaystationxxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\railway-station-xxl (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cancel2_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cancel 2-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,8 +133,11 @@
   <data name="loader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loader.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Edit_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="databaserestore2_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\databaserestore2_25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PlusFilled25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Plus Filled-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,13 +145,10 @@
   <data name="Delete_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Delete-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DataBackupFilled25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data Backup Filled-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Add25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="railwaystationxxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\railway-station-xxl (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="databaserestore2_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\databaserestore2_25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="G3_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G3_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -223,7 +223,7 @@
             this.chkTerca.AutoSize = true;
             this.chkTerca.Location = new System.Drawing.Point(16, 30);
             this.chkTerca.Name = "chkTerca";
-            this.chkTerca.Size = new System.Drawing.Size(80, 15);
+            this.chkTerca.Size = new System.Drawing.Size(79, 15);
             this.chkTerca.Style = MetroFramework.MetroColorStyle.Orange;
             this.chkTerca.TabIndex = 3;
             this.chkTerca.Text = "Terça-feira";
@@ -245,7 +245,7 @@
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.Location = new System.Drawing.Point(17, 14);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(143, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(141, 19);
             this.metroLabel1.TabIndex = 2;
             this.metroLabel1.Text = "1. Selecione os bancos:";
             // 
@@ -295,7 +295,7 @@
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.Location = new System.Drawing.Point(35, 112);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(78, 19);
+            this.metroLabel6.Size = new System.Drawing.Size(76, 19);
             this.metroLabel6.TabIndex = 7;
             this.metroLabel6.Text = "Todo dia às";
             // 
@@ -538,6 +538,7 @@
             // 
             // btnSelecionarDestino
             // 
+            this.btnSelecionarDestino.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSelecionarDestino.Location = new System.Drawing.Point(653, 206);
             this.btnSelecionarDestino.Name = "btnSelecionarDestino";
             this.btnSelecionarDestino.Size = new System.Drawing.Size(50, 23);
@@ -717,6 +718,7 @@
             // btnConectar
             // 
             this.btnConectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConectar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConectar.Location = new System.Drawing.Point(17, 364);
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Size = new System.Drawing.Size(176, 23);
@@ -830,9 +832,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(122, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 31);
+            this.label1.Size = new System.Drawing.Size(291, 31);
             this.label1.TabIndex = 31;
-            this.label1.Text = "MetroSmartBackup";
+            this.label1.Text = "SmartBackup MySQL";
             // 
             // nome
             // 
@@ -946,7 +948,7 @@
             this.metroLabel20.AutoSize = true;
             this.metroLabel20.Location = new System.Drawing.Point(716, 206);
             this.metroLabel20.Name = "metroLabel20";
-            this.metroLabel20.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel20.Size = new System.Drawing.Size(92, 19);
             this.metroLabel20.TabIndex = 50;
             this.metroLabel20.Text = "Fila de Tarefas";
             // 
@@ -1068,9 +1070,10 @@
             // 
             // btnRestore
             // 
-            this.btnRestore.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnRestore.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRestore.BackgroundImage = global::MetroSmartBackup.Properties.Resources.databaserestore2_25;
             this.btnRestore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnRestore.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestore.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnRestore.FontWeight = MetroFramework.MetroButtonWeight.Light;
             this.btnRestore.Location = new System.Drawing.Point(1106, 39);
@@ -1078,17 +1081,19 @@
             this.btnRestore.Size = new System.Drawing.Size(75, 55);
             this.btnRestore.Style = MetroFramework.MetroColorStyle.Lime;
             this.btnRestore.TabIndex = 43;
-            this.btnRestore.Text = "Restore...";
+            this.btnRestore.Text = "Restore";
             this.btnRestore.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnRestore.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnRestore.UseSelectable = true;
+            this.btnRestore.UseVisualStyleBackColor = false;
             this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
             // 
             // btnBackup
             // 
-            this.btnBackup.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnBackup.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnBackup.BackgroundImage = global::MetroSmartBackup.Properties.Resources.DataBackupFilled25;
             this.btnBackup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnBackup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBackup.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnBackup.FontWeight = MetroFramework.MetroButtonWeight.Light;
             this.btnBackup.Location = new System.Drawing.Point(1025, 39);
@@ -1100,13 +1105,15 @@
             this.btnBackup.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBackup.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnBackup.UseSelectable = true;
+            this.btnBackup.UseVisualStyleBackColor = false;
             this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCancelar.BackgroundImage = global::MetroSmartBackup.Properties.Resources.Cancel2_25;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnCancelar.FontWeight = MetroFramework.MetroButtonWeight.Light;
             this.btnCancelar.Location = new System.Drawing.Point(944, 39);
@@ -1118,13 +1125,15 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelar.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnCancelar.UseSelectable = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnExcluir
             // 
-            this.btnExcluir.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnExcluir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExcluir.BackgroundImage")));
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnExcluir.FontWeight = MetroFramework.MetroButtonWeight.Light;
             this.btnExcluir.Location = new System.Drawing.Point(863, 39);
@@ -1136,13 +1145,15 @@
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnExcluir.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnExcluir.UseSelectable = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnSalvar.BackgroundImage = global::MetroSmartBackup.Properties.Resources.SaveasFilled50iloveimgresized;
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnSalvar.FontWeight = MetroFramework.MetroButtonWeight.Light;
             this.btnSalvar.Location = new System.Drawing.Point(782, 39);
@@ -1154,13 +1165,15 @@
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalvar.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnSalvar.UseSelectable = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnEditar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditar.BackgroundImage")));
             this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditar.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnEditar.FontWeight = MetroFramework.MetroButtonWeight.Light;
             this.btnEditar.Location = new System.Drawing.Point(701, 39);
@@ -1172,13 +1185,15 @@
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEditar.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnEditar.UseSelectable = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNovo
             // 
-            this.btnNovo.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnNovo.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnNovo.BackgroundImage = global::MetroSmartBackup.Properties.Resources.Add25;
             this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnNovo.FontWeight = MetroFramework.MetroButtonWeight.Light;
             this.btnNovo.Location = new System.Drawing.Point(620, 39);
@@ -1190,14 +1205,15 @@
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnNovo.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnNovo.UseSelectable = true;
+            this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // picLogo
             // 
-            this.picLogo.Image = global::MetroSmartBackup.Properties.Resources.railwaystationxxl;
-            this.picLogo.Location = new System.Drawing.Point(37, 29);
+            this.picLogo.Image = global::MetroSmartBackup.Properties.Resources.G3_Logo;
+            this.picLogo.Location = new System.Drawing.Point(20, 23);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(79, 65);
+            this.picLogo.Size = new System.Drawing.Size(96, 81);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 30;
             this.picLogo.TabStop = false;
