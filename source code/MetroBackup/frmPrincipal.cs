@@ -37,6 +37,7 @@ namespace MetroBackup
 
         string mValorMSG = "", mFtpHost = "", mFtpUser = "", mFtpPassword = "";
         DateTime dtUltimoBackup;
+        bool mConfig = true;
 
         #region Metodos
 
@@ -89,6 +90,7 @@ namespace MetroBackup
             }
             catch (Exception ex)
             {
+                mConfig = false;
                 if (ex.HResult == -2146233088)
                     MetroMessageBox.Show(this, ex.Message, "Carácteres inválido nas propriedades.", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 else if (ex.HResult == -2147024894)
@@ -542,6 +544,7 @@ namespace MetroBackup
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
+            notifySmartBackup.Visible = false;
             DirectoryInfo diretorio = new DirectoryInfo(Application.StartupPath + "//images");
 
             if (!diretorio.Exists)
@@ -569,8 +572,17 @@ namespace MetroBackup
         private void frmPrincipal_Resize(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Minimized)
+            { 
+                Hide();
+                notifySmartBackup.Visible = true;
+            }
+        }
+        private void frmPrincipal_Shown(object sender, EventArgs e)
+        {
+            if (mConfig)
             {
-                this.Hide();
+                Hide();
+                notifySmartBackup.Visible = true;
             }
         }
 
@@ -691,6 +703,8 @@ namespace MetroBackup
                 dgLista.Enabled = true;
 
                 LimpaCampos();
+
+                mConfig = true;
             }
             catch (Exception ex)
             {
@@ -791,8 +805,9 @@ namespace MetroBackup
         }
         private void notifySmartBackup_DoubleClick(object sender, EventArgs e)
         {
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
+            Show();
+            WindowState = FormWindowState.Normal;
+            notifySmartBackup.Visible = false;
         }
 
         private void txtSenha_KeyDown(object sender, KeyEventArgs e)
@@ -1044,6 +1059,7 @@ namespace MetroBackup
             _telaProgressBar.metroProgressBar.Value = e.ProgressPercentage;
             _telaProgressBar.lblProgresso.Text = e.ProgressPercentage.ToString() + "%";
         }
+
         private void mAsyncWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             try

@@ -821,8 +821,10 @@
             // 
             // notifySmartBackup
             // 
+            this.notifySmartBackup.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifySmartBackup.BalloonTipText = "G3SmartBackup";
             this.notifySmartBackup.Icon = ((System.Drawing.Icon)(resources.GetObject("notifySmartBackup.Icon")));
-            this.notifySmartBackup.Text = "MetroSmartBackup";
+            this.notifySmartBackup.Text = "G3 SmartBackup MySQL";
             this.notifySmartBackup.Visible = true;
             this.notifySmartBackup.DoubleClick += new System.EventHandler(this.notifySmartBackup_DoubleClick);
             // 
@@ -1242,6 +1244,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
+            this.Shown += new System.EventHandler(this.frmPrincipal_Shown);
             this.Resize += new System.EventHandler(this.frmPrincipal_Resize);
             this.mPnlDiasSemana.ResumeLayout(false);
             this.mPnlDiasSemana.PerformLayout();
